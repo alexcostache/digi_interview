@@ -1,0 +1,146 @@
+body
+    font-size: 16px
+    font-family: $font-style
+    color: $font
+    background: $black
+    margin: 0
+    padding: 0
+    background-image: url("../app/img/gradient_bg.png")
+    background-position: center bottom
+    background-size: contain
+    background-repeat: no-repeat
+
+*
+    box-sizing: border-box
+
+
+.grey-text
+    color: $grey
+.underline
+    text-decoration: underline
+
+// Buttons 
+$btn-radius: 5px !default
+$btn-padding: 15px 35px !default
+$btn-padding-sm: 13px 27px !default
+$btn-padding-xs: 10px 20px !default
+$btn-font-size: 14px !default
+$btn-font-size-sm: 12px !default
+$btn-font-weight: 700 !default
+$btn-font-weight-sm: 700 !default
+$btn-transition: all 0.3s ease !default
+$btn-shadow: 0px 5px 10px rgba(0,0,0,0.2) !default  
+
+// main 
+$max-width: 1240px
+
+// Margins & paddings
+$base: 30px
+$sm: 20px
+$section: 50px 20px
+$padding-top: 50px
+$btn-margin: 20px
+
+// campaign-services
+$campaign-services-padding: 30px 0
+$campaign-services-margin: 0 20px
+
+$campaign-service-box-padding: 30px 0
+$campaign-service-box-margin: 20px 0
+
+$campaign-service-box-link-margin: 20px 0
+
+// borders
+$card-radius: 10px
+$btn-radius-lg: 10px
+
+// font sizes 
+$bold: 700
+$normal: 400
+$light: 200
+
+$h1: 45px
+$h2: 34px
+$h3: 24px
+$h4: 18px
+$p: 16px
+
+
+$h1-lg: 40px
+$h1-md: 30px
+$h1-sm: 25px
+
+$h2-lg: 30px
+$h2-md: 25px
+$h2-sm: 20px
+
+$h3-lg: 25px
+$h3-md: 20px
+$h3-sm: 15px
+
+$h4-lg: 20px
+$h4-md: 15px
+$h4-sm: 10px
+
+$p-lg: 18px
+$p-md: 16px
+$p-sm: 14px
+
+// line heights
+$lh-title: 1.2
+$lh-normal: 1.5
+$lh-small: 1.8
+
+// FONTS 
+h1
+    line-height: $lh-title
+    width: 100%
+    margin: 0 0 10px
+    @include mq(mobile)
+        font-size: $h1-sm
+    @include mq(tablet)
+        font-size: $h1-md
+    @include mq(desktop)
+        font-size: $h1-lg
+
+h2
+    font-size: $h2
+    @include mq(mobile)
+        font-size: $h2-sm
+    @include mq(tablet)
+        font-size: $h2-md
+    @include mq(desktop)
+        font-size: $h2-lg
+
+h3
+    font-size: $h3
+    @include mq(mobile)
+        font-size: $h3-sm
+    @include mq(tablet)
+        font-size: $h3-md
+    @include mq(desktop)
+        font-size: $h3-lg
+
+
+h4
+    font-size: $h4
+    @include mq(mobile)
+        font-size: $h4-sm
+    @include mq(tablet)
+        font-size: $h4-md
+    @include mq(desktop)
+        font-size: $h4-lg
+
+p, ol, ul
+    font-family: $font-style
+    color: $white
+    font-size: $p
+    line-height: $lh-normal
+
+p
+    @include mq(mobile)
+        font-size: $p-sm
+    @include mq(tablet)
+        font-size: $p-md
+    @include mq(desktop)
+        font-size: $p-lg

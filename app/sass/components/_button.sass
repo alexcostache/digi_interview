@@ -1,0 +1,67 @@
+button
+    background-color: $btn-primary
+    color: $black
+    border-color: $btn-primary-border
+    border-radius: $btn-radius
+    box-shadow: $btn-shadow
+    text-decoration: none
+    padding: $btn-padding
+    transition: $btn-transition
+    cursor: pointer
+    transition: $btn-transition
+    &:hover
+        background-color: $secondary
+        border-color: $btn-secondary-border
+
+
+.btn_main
+    background-color: $btn-secondary
+    border-color: $btn-secondary
+    
+    &:hover
+        background-color: $btn-primary
+        border-color: $primary
+
+
+.product-detalis-btn
+    border-color: $light-blue
+    background-color: $light-blue
+    color: $white
+    padding: $btn-padding-xs
+
+
+.btn_back
+    background-color: $turquoise
+    color: $white
+    border-color: $btn-primary-border
+    border-radius: 5px
+    box-shadow: $btn-shadow
+    text-decoration: none
+    padding: 10px 20px
+    transition: $btn-transition
+    margin-top: $btn-margin
+    cursor: pointer
+    position: relative
+    border: 1px solid $light-grey
+
+
+    &::before
+        content: ""
+        width: 25px
+        height: 26px
+        background-color: $turquoise
+        position: absolute
+        left: -11px
+        rotate: 45deg
+        top: 4px
+        border-left: 1px solid $light-grey
+        border-bottom: 1px solid $light-grey
+        transition: $btn-transition
+
+    &:hover
+        background-color: $secondary
+        border-color: $btn-primary-border-hover
+        &::before
+            background-color: $secondary
+            border-left: 1px solid $btn-primary-border-hover
+            border-bottom: 1px solid $btn-primary-border-hover

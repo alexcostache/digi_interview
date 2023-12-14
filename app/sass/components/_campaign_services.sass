@@ -1,0 +1,88 @@
+.campaign-services
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: stretch
+    padding: $campaign-services-padding
+    text-align: center
+    margin: $campaign-services-margin
+    @include mq(mobile)
+        flex-flow: column
+        margin: 20px 
+    .campaign-service-box
+        padding: $campaign-service-box-padding
+        margin: $campaign-service-box-margin
+        display: flex
+        flex: 1
+        flex-flow: column
+        justify-content: center
+        align-items: center
+        color: $white
+        h3
+            color: $white
+            margin: 0
+        .campaign-service-box-price
+            font-size: 24px
+            font-weight: $bold
+            margin: 0 0 20px
+            color: $white
+        del 
+            color: $grey
+        button
+            background-color: $light-blue
+            border-color: $light-blue
+            width: 150px
+            &:hover
+                background-color: $btn-secondary
+                border-color: $secondary
+        a   
+            margin: $campaign-service-box-link-margin
+            color: $blue
+            text-decoration: none
+            cursor: pointer
+            font-weight: $bold
+            font-size: 16px
+            &:hover
+                color: $white
+                text-decoration: none
+        &.featured
+            flex: 1.2
+            margin: -20px -30px
+            color: $white
+            border-radius: 10px
+            border: 1px solid $light-grey
+            z-index: 100
+            a
+                color: $dark-blue
+            @include mq(mobile)
+                flex: 1
+                margin: 0
+        &::before
+            content: ''
+            display: block
+            flex: 0 0 auto
+            width: 70px
+            height: 70px
+            margin: 0 auto 20px
+            background: inherit
+            color: #fff
+            font-size: 24px
+            font-weight: $bold
+            line-height: 70px
+            background-image: url("../app/img/bubble.png")
+            background-size: contain
+        &.card-1
+            border-top-left-radius: $card-radius
+            border-bottom-left-radius: $card-radius
+            &::before
+                content: '2'
+        &.card-3
+            border-top-right-radius: $card-radius
+            border-bottom-right-radius: $card-radius
+            &::before
+                content: '3'
+        @include mq(mobile)
+            border-radius: $card-radius
+
+
+

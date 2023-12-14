@@ -1,0 +1,28 @@
+section.internet
+    .campaign-services
+        .campaign-service-box
+            background: $blue
+            border-radius: 10px
+            margin: 0 20px
+            &.featured
+                background: $light-blue !important
+                border: 1px solid $light-blue
+                flex: 1
+            a
+                color: $dark-blue
+            button
+                background-color: $white
+                border-color: $white
+                &:hover
+                    background-color: $btn-secondary
+                    border-color: $secondary
+            &::before
+                content: ''
+            
+        .card-1
+            @include mq(mobile)
+                margin-bottom: 20px
+        .card-1::before
+            background-image: url("../app/img/logo_1000.png")
+        .card-2::before
+            background-image: url("../app/img/logo_500.png")

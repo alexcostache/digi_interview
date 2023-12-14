@@ -1,0 +1,26 @@
+// Screen sizes
+$xs: "20em" //320 - notmobile
+$s: "48em" //768 - mobile
+$m: "62em" //992 - tablet
+$l: "90em" //1440 - desktop
+
+/**
+ * Media queries logic
+ * @param {string} $breakpoint - notmobile, mobile, tablet, desktop, huge
+ */
+@mixin mq($breakpoint)
+    @if ($breakpoint==notmobile)
+        @media only screen and (max-width: $xs)
+            @content
+    @if ($breakpoint==mobile)
+        @media only screen and (min-width: $xs ) and (max-width: $s)
+            @content
+    @if ($breakpoint==tablet)
+        @media only screen and (min-width: $s) and (max-width: $m)
+            @content
+    @if ($breakpoint==desktop)
+        @media only screen and (min-width: $m) and (max-width: $l)
+            @content
+    @if ($breakpoint==huge)
+        @media only screen and (min-width: $l)
+            @content

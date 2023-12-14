@@ -1,0 +1,22 @@
+section.tv
+    .campaign-services
+        .campaign-service-box
+            background: $purple
+            &.featured
+                background: $light-purple
+            a
+                color: $light-blue
+            button
+                background-color: $white
+                border-color: $white
+                &:hover
+                    background-color: $btn-secondary
+                    border-color: $secondary
+            &::before
+                content: ''
+        .card-1::before
+            background-image: url("../app/img/analogic.png")
+        .card-2::before
+            background-image: url("../app/img/digital.png")
+        .card-3::before
+            background-image: url("../app/img/satelit.png")
